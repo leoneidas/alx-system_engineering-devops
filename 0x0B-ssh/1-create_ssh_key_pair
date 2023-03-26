@@ -7,3 +7,8 @@ PASSPHRASE="betty"
 
 # Create RSA key pair
 ssh-keygen -t rsa -b "$BITS" -N "$PASSPHRASE" -f "$KEY_NAME"
+
+# ssh config file
+Host *
+      PasswordAuthentication no
+      IdentifyFile ~/.ssh/school
